@@ -82,7 +82,7 @@ public class MenuController implements Initializable {
         if (!fxmlName.isEmpty()) {
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/userInterfaceLaag/" + fxmlName + ".fxml"));
+                fxmlLoader.setLocation(getClass().getResource(fxmlName + ".fxml"));
                 Scene scene;
                 if (fxmlName.equals("OverzichtVluchten"))
                     scene = new Scene(fxmlLoader.load(), 530, 310);
